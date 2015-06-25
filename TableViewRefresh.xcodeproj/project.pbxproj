@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10D0E3801B3C39C0000BEF99 /* ObjectAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D0E37F1B3C39C0000BEF99 /* ObjectAnimationView.m */; };
+		10DCEA411B3B8927001B6D59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA401B3B8927001B6D59 /* main.m */; };
+		10DCEA441B3B8927001B6D59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA431B3B8927001B6D59 /* AppDelegate.m */; };
+		10DCEA471B3B8927001B6D59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA461B3B8927001B6D59 /* ViewController.m */; };
+		10DCEA4A1B3B8927001B6D59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DCEA481B3B8927001B6D59 /* Main.storyboard */; };
+		10DCEA4C1B3B8927001B6D59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DCEA4B1B3B8927001B6D59 /* Images.xcassets */; };
+		10DCEA4F1B3B8927001B6D59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10DCEA4D1B3B8927001B6D59 /* LaunchScreen.xib */; };
+		10DCEA5B1B3B8927001B6D59 /* TableViewRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA5A1B3B8927001B6D59 /* TableViewRefreshTests.m */; };
+		10DCEA6D1B3B8ED8001B6D59 /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA661B3B8ED8001B6D59 /* GCDGroup.m */; };
+		10DCEA6E1B3B8ED8001B6D59 /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA681B3B8ED8001B6D59 /* GCDQueue.m */; };
+		10DCEA6F1B3B8ED8001B6D59 /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA6A1B3B8ED8001B6D59 /* GCDSemaphore.m */; };
+		10DCEA701B3B8ED8001B6D59 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA6C1B3B8ED8001B6D59 /* GCDTimer.m */; };
+		10DCEA751B3BCF02001B6D59 /* RefreshObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA721B3BCF02001B6D59 /* RefreshObject.m */; };
+		10DCEA761B3BCF02001B6D59 /* UIScrollView+RefreshObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA741B3BCF02001B6D59 /* UIScrollView+RefreshObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10DCEA551B3B8927001B6D59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10DCEA331B3B8927001B6D59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10DCEA3A1B3B8927001B6D59;
+			remoteInfo = TableViewRefresh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10D0E37E1B3C39C0000BEF99 /* ObjectAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectAnimationView.h; sourceTree = "<group>"; };
+		10D0E37F1B3C39C0000BEF99 /* ObjectAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectAnimationView.m; sourceTree = "<group>"; };
+		10DCEA3B1B3B8927001B6D59 /* TableViewRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DCEA3F1B3B8927001B6D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DCEA401B3B8927001B6D59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10DCEA421B3B8927001B6D59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		10DCEA431B3B8927001B6D59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		10DCEA451B3B8927001B6D59 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		10DCEA461B3B8927001B6D59 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		10DCEA491B3B8927001B6D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10DCEA4B1B3B8927001B6D59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		10DCEA4E1B3B8927001B6D59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		10DCEA541B3B8927001B6D59 /* TableViewRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DCEA591B3B8927001B6D59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DCEA5A1B3B8927001B6D59 /* TableViewRefreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewRefreshTests.m; sourceTree = "<group>"; };
+		10DCEA641B3B8ED8001B6D59 /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		10DCEA651B3B8ED8001B6D59 /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		10DCEA661B3B8ED8001B6D59 /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		10DCEA671B3B8ED8001B6D59 /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		10DCEA681B3B8ED8001B6D59 /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		10DCEA691B3B8ED8001B6D59 /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
+		10DCEA6A1B3B8ED8001B6D59 /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
+		10DCEA6B1B3B8ED8001B6D59 /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		10DCEA6C1B3B8ED8001B6D59 /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		10DCEA711B3BCF02001B6D59 /* RefreshObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshObject.h; sourceTree = "<group>"; };
+		10DCEA721B3BCF02001B6D59 /* RefreshObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshObject.m; sourceTree = "<group>"; };
+		10DCEA731B3BCF02001B6D59 /* UIScrollView+RefreshObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RefreshObject.h"; sourceTree = "<group>"; };
+		10DCEA741B3BCF02001B6D59 /* UIScrollView+RefreshObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RefreshObject.m"; sourceTree = "<group>"; };
+		10DCEA771B3BE4F7001B6D59 /* RefreshObjectAnimationProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshObjectAnimationProtocal.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10DCEA381B3B8927001B6D59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10DCEA511B3B8927001B6D59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10D0E3811B3C458A000BEF99 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				10DCEA641B3B8ED8001B6D59 /* GCD.h */,
+				10DCEA651B3B8ED8001B6D59 /* GCDGroup.h */,
+				10DCEA661B3B8ED8001B6D59 /* GCDGroup.m */,
+				10DCEA671B3B8ED8001B6D59 /* GCDQueue.h */,
+				10DCEA681B3B8ED8001B6D59 /* GCDQueue.m */,
+				10DCEA691B3B8ED8001B6D59 /* GCDSemaphore.h */,
+				10DCEA6A1B3B8ED8001B6D59 /* GCDSemaphore.m */,
+				10DCEA6B1B3B8ED8001B6D59 /* GCDTimer.h */,
+				10DCEA6C1B3B8ED8001B6D59 /* GCDTimer.m */,
+			);
+			name = GCD;
+			sourceTree = "<group>";
+		};
+		10D0E3821B3C46C3000BEF99 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				10DCEA771B3BE4F7001B6D59 /* RefreshObjectAnimationProtocal.h */,
+				10DCEA731B3BCF02001B6D59 /* UIScrollView+RefreshObject.h */,
+				10DCEA741B3BCF02001B6D59 /* UIScrollView+RefreshObject.m */,
+				10DCEA711B3BCF02001B6D59 /* RefreshObject.h */,
+				10DCEA721B3BCF02001B6D59 /* RefreshObject.m */,
+			);
+			name = Refresh;
+			sourceTree = "<group>";
+		};
+		10DCEA321B3B8927001B6D59 = {
+			isa = PBXGroup;
+			children = (
+				10DCEA3D1B3B8927001B6D59 /* TableViewRefresh */,
+				10DCEA571B3B8927001B6D59 /* TableViewRefreshTests */,
+				10DCEA3C1B3B8927001B6D59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10DCEA3C1B3B8927001B6D59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10DCEA3B1B3B8927001B6D59 /* TableViewRefresh.app */,
+				10DCEA541B3B8927001B6D59 /* TableViewRefreshTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10DCEA3D1B3B8927001B6D59 /* TableViewRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				10D0E3821B3C46C3000BEF99 /* Refresh */,
+				10DCEA421B3B8927001B6D59 /* AppDelegate.h */,
+				10DCEA431B3B8927001B6D59 /* AppDelegate.m */,
+				10DCEA451B3B8927001B6D59 /* ViewController.h */,
+				10DCEA461B3B8927001B6D59 /* ViewController.m */,
+				10D0E37E1B3C39C0000BEF99 /* ObjectAnimationView.h */,
+				10D0E37F1B3C39C0000BEF99 /* ObjectAnimationView.m */,
+				10DCEA481B3B8927001B6D59 /* Main.storyboard */,
+				10DCEA4B1B3B8927001B6D59 /* Images.xcassets */,
+				10DCEA4D1B3B8927001B6D59 /* LaunchScreen.xib */,
+				10D0E3811B3C458A000BEF99 /* GCD */,
+				10DCEA3E1B3B8927001B6D59 /* Supporting Files */,
+			);
+			path = TableViewRefresh;
+			sourceTree = "<group>";
+		};
+		10DCEA3E1B3B8927001B6D59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10DCEA3F1B3B8927001B6D59 /* Info.plist */,
+				10DCEA401B3B8927001B6D59 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10DCEA571B3B8927001B6D59 /* TableViewRefreshTests */ = {
+			isa = PBXGroup;
+			children = (
+				10DCEA5A1B3B8927001B6D59 /* TableViewRefreshTests.m */,
+				10DCEA581B3B8927001B6D59 /* Supporting Files */,
+			);
+			path = TableViewRefreshTests;
+			sourceTree = "<group>";
+		};
+		10DCEA581B3B8927001B6D59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10DCEA591B3B8927001B6D59 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10DCEA3A1B3B8927001B6D59 /* TableViewRefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10DCEA5E1B3B8927001B6D59 /* Build configuration list for PBXNativeTarget "TableViewRefresh" */;
+			buildPhases = (
+				10DCEA371B3B8927001B6D59 /* Sources */,
+				10DCEA381B3B8927001B6D59 /* Frameworks */,
+				10DCEA391B3B8927001B6D59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewRefresh;
+			productName = TableViewRefresh;
+			productReference = 10DCEA3B1B3B8927001B6D59 /* TableViewRefresh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10DCEA531B3B8927001B6D59 /* TableViewRefreshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10DCEA611B3B8927001B6D59 /* Build configuration list for PBXNativeTarget "TableViewRefreshTests" */;
+			buildPhases = (
+				10DCEA501B3B8927001B6D59 /* Sources */,
+				10DCEA511B3B8927001B6D59 /* Frameworks */,
+				10DCEA521B3B8927001B6D59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10DCEA561B3B8927001B6D59 /* PBXTargetDependency */,
+			);
+			name = TableViewRefreshTests;
+			productName = TableViewRefreshTests;
+			productReference = 10DCEA541B3B8927001B6D59 /* TableViewRefreshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10DCEA331B3B8927001B6D59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = YouXianMing;
+				TargetAttributes = {
+					10DCEA3A1B3B8927001B6D59 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 96SZNQ256W;
+					};
+					10DCEA531B3B8927001B6D59 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 10DCEA3A1B3B8927001B6D59;
+					};
+				};
+			};
+			buildConfigurationList = 10DCEA361B3B8927001B6D59 /* Build configuration list for PBXProject "TableViewRefresh" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10DCEA321B3B8927001B6D59;
+			productRefGroup = 10DCEA3C1B3B8927001B6D59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10DCEA3A1B3B8927001B6D59 /* TableViewRefresh */,
+				10DCEA531B3B8927001B6D59 /* TableViewRefreshTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10DCEA391B3B8927001B6D59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DCEA4A1B3B8927001B6D59 /* Main.storyboard in Resources */,
+				10DCEA4F1B3B8927001B6D59 /* LaunchScreen.xib in Resources */,
+				10DCEA4C1B3B8927001B6D59 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10DCEA521B3B8927001B6D59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10DCEA371B3B8927001B6D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DCEA751B3BCF02001B6D59 /* RefreshObject.m in Sources */,
+				10DCEA6D1B3B8ED8001B6D59 /* GCDGroup.m in Sources */,
+				10D0E3801B3C39C0000BEF99 /* ObjectAnimationView.m in Sources */,
+				10DCEA471B3B8927001B6D59 /* ViewController.m in Sources */,
+				10DCEA441B3B8927001B6D59 /* AppDelegate.m in Sources */,
+				10DCEA411B3B8927001B6D59 /* main.m in Sources */,
+				10DCEA701B3B8ED8001B6D59 /* GCDTimer.m in Sources */,
+				10DCEA6E1B3B8ED8001B6D59 /* GCDQueue.m in Sources */,
+				10DCEA6F1B3B8ED8001B6D59 /* GCDSemaphore.m in Sources */,
+				10DCEA761B3BCF02001B6D59 /* UIScrollView+RefreshObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10DCEA501B3B8927001B6D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DCEA5B1B3B8927001B6D59 /* TableViewRefreshTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10DCEA561B3B8927001B6D59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10DCEA3A1B3B8927001B6D59 /* TableViewRefresh */;
+			targetProxy = 10DCEA551B3B8927001B6D59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		10DCEA481B3B8927001B6D59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10DCEA491B3B8927001B6D59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10DCEA4D1B3B8927001B6D59 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10DCEA4E1B3B8927001B6D59 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10DCEA5C1B3B8927001B6D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10DCEA5D1B3B8927001B6D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10DCEA5F1B3B8927001B6D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TableViewRefresh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		10DCEA601B3B8927001B6D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TableViewRefresh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		10DCEA621B3B8927001B6D59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TableViewRefreshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewRefresh.app/TableViewRefresh";
+			};
+			name = Debug;
+		};
+		10DCEA631B3B8927001B6D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TableViewRefreshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewRefresh.app/TableViewRefresh";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10DCEA361B3B8927001B6D59 /* Build configuration list for PBXProject "TableViewRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DCEA5C1B3B8927001B6D59 /* Debug */,
+				10DCEA5D1B3B8927001B6D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10DCEA5E1B3B8927001B6D59 /* Build configuration list for PBXNativeTarget "TableViewRefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DCEA5F1B3B8927001B6D59 /* Debug */,
+				10DCEA601B3B8927001B6D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10DCEA611B3B8927001B6D59 /* Build configuration list for PBXNativeTarget "TableViewRefreshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DCEA621B3B8927001B6D59 /* Debug */,
+				10DCEA631B3B8927001B6D59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10DCEA331B3B8927001B6D59 /* Project object */;
+}
