@@ -56,6 +56,9 @@
     self.animationView.normalTextColor   = [UIColor blackColor];
     self.animationView.fadeTextColor     = [UIColor redColor];
     [self.tableView addSubview:self.animationView];
+    
+    
+    [self.tableView beginRefresh];
 }
 
 
@@ -64,7 +67,7 @@
     
     // 2秒钟后结束刷新
     [GCDQueue executeInMainQueue:^{
-        [refreshObject endRefresh];
+        [self.tableView endRefresh];
     } afterDelaySecs:2];
     
     [self.animationView startRefreshAnimation];

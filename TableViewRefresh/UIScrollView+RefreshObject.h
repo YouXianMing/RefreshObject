@@ -30,4 +30,14 @@
  */
 - (void)removeRefreshObject;
 
+/**
+ *  开始刷新
+ */
+- (void)beginRefresh;
+
+/**
+ *  结束刷新
+ */
+- (void)endRefresh;
+
 @end

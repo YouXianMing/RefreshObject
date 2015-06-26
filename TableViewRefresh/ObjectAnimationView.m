@@ -56,6 +56,11 @@
 
 - (void)startRefreshAnimation {
 
+    // 当为 animationWithPercent 为 100% 的时候, 该view的状态值需要与 startRefreshAnimation 中view执行动画的起始值一致
+    self.normalLabel.text  = _updateText;
+    self.updateLabel.text  = _updateText;
+    self.normalLabel.alpha = 0;
+    
     self.updateLabel.text = @"refreshing ...";
     self.normalLabel.text = @"refreshing ...";
     

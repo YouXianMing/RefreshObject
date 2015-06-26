@@ -47,4 +47,14 @@ NSString * const _recognizerRefreshObject = @"recognizerRefreshObject";
     self.refreshObject = nil;
 }
 
+- (void)beginRefresh {
+
+    [self.refreshObject beginRefreshing];
+}
+
+- (void)endRefresh {
+
+    [self.refreshObject endRefresh];
+}
+
 @end
