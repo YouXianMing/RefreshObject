@@ -15,6 +15,9 @@
 #define CELL             @"cell"
 #define VIEW_HEIGHT      64.f
 
+#define TYPE_ONE         YES
+#define TYPE_TWO         !TYPE_ONE
+
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, RefreshObjectDelegate>
 
 @property (nonatomic, strong) UITableView         *tableView;
@@ -28,9 +31,21 @@
     [super viewDidLoad];
  
     
+    if (TYPE_ONE) {
+        self.animationView                   = [[ObjectAnimationView alloc] initWithFrame:CGRectMake(0, 0, 320, VIEW_HEIGHT)];
+        self.animationView.layer.borderWidth = 4.f;
+        self.animationView.normalText        = @"pull down ...";
+        self.animationView.updateText        = @"release to refresh ...";
+        self.animationView.normalTextColor   = [UIColor blackColor];
+        self.animationView.fadeTextColor     = [UIColor redColor];
+        [self.view addSubview:self.animationView];
+    }
+    
+    
     self.tableView            = [[UITableView alloc] initWithFrame:self.view.bounds];
     self.tableView.dataSource = self;
     self.tableView.delegate   = self;
+    self.tableView.backgroundColor = [UIColor clearColor];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CELL];
     [self.view addSubview:self.tableView];
     
@@ -47,16 +62,16 @@
                       refreshObjectDelegate:self];
         
     }
-    
-    
-    self.animationView                   = [[ObjectAnimationView alloc] initWithFrame:CGRectMake(0, -VIEW_HEIGHT, 320, VIEW_HEIGHT)];
-    self.animationView.layer.borderWidth = 1.f;
-    self.animationView.normalText        = @"pull down ...";
-    self.animationView.updateText        = @"release to refresh ...";
-    self.animationView.normalTextColor   = [UIColor blackColor];
-    self.animationView.fadeTextColor     = [UIColor redColor];
-    [self.tableView addSubview:self.animationView];
-    
+
+    if (TYPE_TWO) {
+        self.animationView                   = [[ObjectAnimationView alloc] initWithFrame:CGRectMake(0, -VIEW_HEIGHT, 320, VIEW_HEIGHT)];
+        self.animationView.layer.borderWidth = 1.f;
+        self.animationView.normalText        = @"pull down ...";
+        self.animationView.updateText        = @"release to refresh ...";
+        self.animationView.normalTextColor   = [UIColor blackColor];
+        self.animationView.fadeTextColor     = [UIColor redColor];
+        [self.tableView addSubview:self.animationView];
+    }
     
     [self.tableView beginRefresh];
 }
@@ -93,6 +108,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CELL];
+    cell.selectionStyle   = UITableViewCellSelectionStyleNone;
     cell.textLabel.text   = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     
     return cell;
