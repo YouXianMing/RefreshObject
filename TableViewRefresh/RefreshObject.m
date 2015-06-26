@@ -45,7 +45,9 @@
         
         if (currentPostion < -_height) {
             
-            [self beginRefreshing];
+            if (_state == NORMAL_STATE) {
+                [self beginRefreshing];
+            }
         }
     }
     
