@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10494F731B3CE54000464931 /* TypeOneRefreshObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 10494F721B3CE54000464931 /* TypeOneRefreshObject.m */; };
 		10D0E3801B3C39C0000BEF99 /* ObjectAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D0E37F1B3C39C0000BEF99 /* ObjectAnimationView.m */; };
 		10DCEA411B3B8927001B6D59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA401B3B8927001B6D59 /* main.m */; };
 		10DCEA441B3B8927001B6D59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DCEA431B3B8927001B6D59 /* AppDelegate.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10494F711B3CE54000464931 /* TypeOneRefreshObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeOneRefreshObject.h; sourceTree = "<group>"; };
+		10494F721B3CE54000464931 /* TypeOneRefreshObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeOneRefreshObject.m; sourceTree = "<group>"; };
 		10D0E37E1B3C39C0000BEF99 /* ObjectAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectAnimationView.h; sourceTree = "<group>"; };
 		10D0E37F1B3C39C0000BEF99 /* ObjectAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectAnimationView.m; sourceTree = "<group>"; };
 		10DCEA3B1B3B8927001B6D59 /* TableViewRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +140,8 @@
 				10DCEA431B3B8927001B6D59 /* AppDelegate.m */,
 				10DCEA451B3B8927001B6D59 /* ViewController.h */,
 				10DCEA461B3B8927001B6D59 /* ViewController.m */,
+				10494F711B3CE54000464931 /* TypeOneRefreshObject.h */,
+				10494F721B3CE54000464931 /* TypeOneRefreshObject.m */,
 				10D0E37E1B3C39C0000BEF99 /* ObjectAnimationView.h */,
 				10D0E37F1B3C39C0000BEF99 /* ObjectAnimationView.m */,
 				10DCEA481B3B8927001B6D59 /* Main.storyboard */,
@@ -223,7 +228,7 @@
 				TargetAttributes = {
 					10DCEA3A1B3B8927001B6D59 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 96SZNQ256W;
+						DevelopmentTeam = LQ7EZHXL53;
 					};
 					10DCEA531B3B8927001B6D59 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -279,6 +284,7 @@
 				10DCEA6D1B3B8ED8001B6D59 /* GCDGroup.m in Sources */,
 				10D0E3801B3C39C0000BEF99 /* ObjectAnimationView.m in Sources */,
 				10DCEA471B3B8927001B6D59 /* ViewController.m in Sources */,
+				10494F731B3CE54000464931 /* TypeOneRefreshObject.m in Sources */,
 				10DCEA441B3B8927001B6D59 /* AppDelegate.m in Sources */,
 				10DCEA411B3B8927001B6D59 /* main.m in Sources */,
 				10DCEA701B3B8ED8001B6D59 /* GCDTimer.m in Sources */,

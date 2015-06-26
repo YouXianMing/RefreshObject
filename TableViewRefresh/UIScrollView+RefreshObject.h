@@ -15,16 +15,19 @@
 /**
  *  需要主动赋值
  */
-@property (nonatomic, strong)  RefreshObject  *refreshObject;
+@property (nonatomic, strong, readonly)  RefreshObject  *refreshObject;
 
 /**
- *  添加观察者
+ *  创建刷新对象并设置刷新对象代理
+ *
+ *  @param refreshObject 刷新对象
+ *  @param delegate      刷新对象代理
  */
-- (void)addObserver;
+- (void)createRefreshObject:(RefreshObject *)refreshObject refreshObjectDelegate:(id)delegate;
 
 /**
- *  移除观察者
+ *  移除刷新对象
  */
-- (void)removeObserver;
+- (void)removeRefreshObject;
 
 @end

@@ -10,6 +10,7 @@
 #import "GCD.h"
 #import "UIScrollView+RefreshObject.h"
 #import "ObjectAnimationView.h"
+#import "TypeOneRefreshObject.h"
 
 #define CELL             @"cell"
 #define VIEW_HEIGHT      64.f
@@ -33,12 +34,19 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CELL];
     [self.view addSubview:self.tableView];
     
-    
-    RefreshObject *refresh       = [RefreshObject new];
-    refresh.height               = VIEW_HEIGHT;
-    refresh.delegate             = self;
-    self.tableView.refreshObject = refresh;
-    [self.tableView addObserver];
+
+    if (/* DISABLES CODE */ (1)) {
+
+        [self.tableView createRefreshObject:[RefreshObject refreshObjectWithHeight:VIEW_HEIGHT]
+                      refreshObjectDelegate:self];
+        
+    } else {
+
+        // 子类重写父类改变动画样式
+        [self.tableView createRefreshObject:[TypeOneRefreshObject refreshObjectWithHeight:VIEW_HEIGHT]
+                      refreshObjectDelegate:self];
+        
+    }
     
     
     self.animationView                   = [[ObjectAnimationView alloc] initWithFrame:CGRectMake(0, -VIEW_HEIGHT, 320, VIEW_HEIGHT)];
@@ -54,12 +62,12 @@
 #pragma mark - 刷新代理
 - (void)startRefreshing:(RefreshObject *)refreshObject {
     
-    [self.animationView startRefreshAnimation];
-    
     // 2秒钟后结束刷新
     [GCDQueue executeInMainQueue:^{
         [refreshObject endRefresh];
     } afterDelaySecs:2];
+    
+    [self.animationView startRefreshAnimation];
 }
 
 - (void)endRefresh:(RefreshObject *)refreshObject {
@@ -85,12 +93,6 @@
     cell.textLabel.text   = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     
     return cell;
-}
-
-#pragma mark - 
-- (void)dealloc {
-    
-    [self.tableView removeObserver];
 }
 
 @end

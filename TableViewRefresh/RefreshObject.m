@@ -10,6 +10,8 @@
 
 @interface RefreshObject ()
 
+@property (nonatomic, weak) UIScrollView  *scrollView;
+
 @end
 
 @implementation RefreshObject
@@ -61,12 +63,17 @@
         }
         
         
-        [UIView animateWithDuration:0.3 animations:^{
-            _scrollView.contentInset = UIEdgeInsetsMake(_height, 0, 0, 0);
-        } completion:^(BOOL finished) {
-
-        }];
+        [self refreshingAnimation];
     }
+}
+
+- (void)refreshingAnimation {
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        _scrollView.contentInset = UIEdgeInsetsMake(_height, 0, 0, 0);
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 - (void)endRefresh {
@@ -75,11 +82,63 @@
         [_delegate endRefresh:self];
     }
     
+    [self endRefreshAnimation];
+}
+
+- (void)endRefreshAnimation {
+    
     [UIView animateWithDuration:0.3f animations:^{
         _scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     } completion:^(BOOL finished) {
         _state = NORMAL_STATE;
     }];
+}
+
++ (instancetype)refreshObjectWithHeight:(CGFloat)height {
+    
+    RefreshObject *object = [[[self class] alloc] init];
+    object.height         = height;
+    
+    return object;
+}
+
+- (void)addObserverObject:(UIScrollView *)scrollView {
+
+    self.scrollView = scrollView;
+}
+
+- (void)addObserverWithScrollView {
+    
+    if (_scrollView) {
+        
+        // 添加监听
+        [_scrollView addObserver:self
+                      forKeyPath:@"contentOffset"
+                         options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+                         context:nil];
+    }
+}
+
+- (void)changeState:(ERefreshState)state {
+    _state = state;
+}
+
+- (void)removeObserverWithScrollView {
+    
+    if (self.scrollView) {
+        
+        // 移除监听
+        [self.scrollView removeObserver:self
+                             forKeyPath:@"contentOffset"];
+        
+        self.scrollView = nil;
+    }
+}
+
+
+- (void)dealloc {
+    
+    [self removeObserverWithScrollView];
 }
 
 @end

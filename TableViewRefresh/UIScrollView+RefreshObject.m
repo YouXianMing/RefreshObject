@@ -29,33 +29,22 @@ NSString * const _recognizerRefreshObject = @"recognizerRefreshObject";
 
 #pragma mark -
 
-- (void)addObserver {
+- (void)createRefreshObject:(RefreshObject *)refreshObject refreshObjectDelegate:(id)delegate {
     
-    if (self.refreshObject && self.refreshObject.scrollView == nil) {
+    if (self.refreshObject == nil) {
         
-        // 获取scrollView
-        self.refreshObject.scrollView = self;
-        
-        // 添加监听
-        [self addObserver:self.refreshObject
-               forKeyPath:@"contentOffset"
-                  options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
-                  context:nil];
+        self.refreshObject            = refreshObject;
+        self.refreshObject.delegate   = delegate;
+
+        [self.refreshObject addObserverObject:self];
+        [self.refreshObject addObserverWithScrollView];
     }
+    
 }
 
-- (void)removeObserver {
-
-    if (self.refreshObject) {
-        
-        // 移除监听
-        [self removeObserver:self.refreshObject
-                  forKeyPath:@"contentOffset"];
-        
-        self.refreshObject.scrollView = nil;
-        self.refreshObject            = nil;
-    }
+- (void)removeRefreshObject {
+    
+    self.refreshObject = nil;
 }
-
 
 @end
