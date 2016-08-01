@@ -1,4 +1,4 @@
-# RefreshObject
+# RefreshObject - 已弃用
 
 > 下拉刷新的实现
 
